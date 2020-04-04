@@ -13,6 +13,10 @@ const app = express();
 const handleHome = (req, res) => res.send("hello ! from home");
 const handleProfile = (req, res) => res.send("you are on profile");
 
+//https://expressjs.com/ko/4x/api.html#app.set
+app.set("view engine", "pug");
+
+
 // middle-ware -> 위에서 부터 순서대로 진행
 app.use(cookeParser());
 app.use(bodyParser.json());
