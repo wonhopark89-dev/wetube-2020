@@ -2,6 +2,9 @@ footer.header
     div.header__column
         a(href=routes.home)
             i.fab.fa-youtube
+    .hedaer__column
+        form(action=routes.search, method="get")
+            input(type="text", placeholder="search by term...", name="term")
     .header__column 
         ul
             li
