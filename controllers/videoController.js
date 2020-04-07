@@ -1,7 +1,10 @@
+import { videos } from "../db";
 // export const home = (req,res) => res.send("Home");
 
-export const home = (req, res) =>
-  res.render("home", { pageTitle: "Home", potato: "1234" });
+export const home = (req, res) => {
+  res.render("home", { pageTitle: "Home", videos });
+};
+
 export const search = (req, res) => {
   // ES6 format !
   const {
