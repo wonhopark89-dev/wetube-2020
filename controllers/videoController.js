@@ -1,4 +1,3 @@
-import { videos } from "../db";
 import routes from "../routers"; // routes is default export option
 // export const home = (req,res) => res.send("Home");
 
