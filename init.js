@@ -5,7 +5,6 @@ import dotenv from "dotenv";
 // Loads .env file contents into | process.env. Example: 'KEY=value' becomes { parsed: { KEY: 'value' } }
 dotenv.config();
 import "./models/Video";
-import "./models/Comment";
 
 const PORT = process.env.PORT || 4000;
 const handleListening = () => {
